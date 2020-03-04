@@ -75,14 +75,15 @@ export default {
   align-items: center;
   padding-top: 2px;
   position: relative;
+  color: black;
 }
 
 .search-input input
 {
   width: 100%;
   font-size: 18px;
-  color: black;
-  font-family: 'Raleway';
+  
+  font-family: "Roboto";
   border: none;
   font-weight: 500;
   position: relative;
@@ -90,7 +91,7 @@ export default {
 }
 .search-input input::placeholder
 {
-  font-weight: 500;
+  font-weight: 400;
   color: black;
 }
 

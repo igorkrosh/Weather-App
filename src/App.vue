@@ -1,13 +1,5 @@
 <template>
   <div id="app">
-    <!--<div class="weather-panel">
-      <div class="columns">
-        <div class="column is-two-fifths">
-          <TodayPanel/> 
-        </div>
-        
-      </div>
-    </div>-->
     <div class="tile is-ancestor weather-panel">
       <TodayPanel/> 
       <DetailsPanel/>  
@@ -29,10 +21,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
 #app {
-  font-family: 'Raleway';
+  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
