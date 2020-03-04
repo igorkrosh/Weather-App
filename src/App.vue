@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="tile is-ancestor weather-panel">
+    <div class="tile container is-ancestor weather-panel">
       <TodayPanel/> 
       <DetailsPanel/>  
     </div>  

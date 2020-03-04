@@ -19,7 +19,7 @@ export default {
     height: 300px;
     position: relative;
     margin: 20px auto 0 auto;
-
+    font-size: 16px;
 }
 .clear-sky
 {
@@ -40,7 +40,9 @@ export default {
 
 .clear-sky .cloud
 {
-    font-size: 10rem;
+
+    width: 60%;
+    height: auto;
     position: absolute;
     left: 0;
     top: 0;
@@ -49,7 +51,8 @@ export default {
 
 .clear-sky .rain
 {
-    font-size: 7rem;
+    width: 30%;
+    height: auto;
     position: absolute;
     color: #4050d2;
     z-index: 101;    

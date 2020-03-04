@@ -1,5 +1,5 @@
 <template>
-    <div class="tile is-3">
+    <div class="tile is-4">
         <div class="tile is-child today-panel">
             <SearchForm/>
             <IconClearSky/>
@@ -7,7 +7,7 @@
                 <div class="current-now">
                     3°C
                     <b-tooltip class="feels-like" label="Feels like">
-                        <div >
+                        <div>
                             -1°C
                         </div>
                     </b-tooltip>
