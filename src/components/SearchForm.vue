@@ -82,17 +82,13 @@ export default {
 {
   width: 100%;
   font-size: 18px;
-  
-  font-family: "Roboto";
   border: none;
-  font-weight: 500;
   position: relative;
-  
 }
 .search-input input::placeholder
 {
-  font-weight: 400;
   color: black;
+  font-weight: 500;
 }
 
 .search-input::after

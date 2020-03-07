@@ -27,6 +27,18 @@
             <div class="title">
                 <span>Today's Highlights    </span> 
             </div>
+            <div class="today-highlights">
+                <div class="day-weather-card">
+                    <span class="highlights-title">UV Index</span>
+                    <div class="uv-index">
+                        <div class="bar-wrapper">
+                            <div class="bar-bg"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <span class="value">10</span>
+                    </div>                    
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -98,5 +110,63 @@ export default {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
+}
+.uv-index{
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;  
+  text-align: center;
+}
+.uv-index .bar-wrapper{ 
+  position: relative;
+  overflow: hidden; 
+  width: 160px; 
+  height: 80px; 
+  margin-bottom: -14px; 
+}
+.uv-index .bar{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 160px; 
+  height: 160px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 20px solid rgba(0, 0, 0, 0);     
+  border-bottom-color: #FFBF5E;  
+  border-right-color: #FFBF5E;
+  transform: rotate(60deg);
+}
+.uv-index .bar-bg{
+  position: absolute;
+  top: 5px; 
+  left: 5px;
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 10px solid #f3f1ef;
+}
+.uv-index .value
+{
+    font-size: 44px;
+    line-height: 40px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.highlights-title
+{
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #AEAEAE;
+}
+.today-highlights .day-weather-card
+{
+    padding: 20px;;
 }
 </style>
