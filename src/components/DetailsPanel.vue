@@ -38,7 +38,31 @@
                         <span class="value">10</span>
                     </div>                    
                 </div>
+                <div class="day-weather-card">
+                    <span class="highlights-title">Sunrise & Sunset</span>
+                    <div class="sun-data-wrapper">
+                        <div class="sun">
+                            <font-awesome-icon icon="arrow-up" class="arrow" />
+                        </div>
+                        <div class="sun-data">
+                            6:05
+                        </div>
+                    </div>
+                    <div class="sun-data-wrapper">
+                        <div class="sun">
+                            <font-awesome-icon icon="arrow-down" class="arrow" />
+                        </div>
+                        <div class="sun-data">
+                            18:05
+                        </div>
+                    </div>
+                </div>
+                <div class="day-weather-card">
+                    <span class="highlights-title">Visibility</span>
+                    <div class="visibility">5.2 <span>km</span></div>
+                </div>
             </div>
+            
         </div>
     </div>
 </template>
@@ -167,6 +191,52 @@ export default {
 }
 .today-highlights .day-weather-card
 {
-    padding: 20px;;
+    padding: 20px;
+}
+
+.today-highlights .sun
+{
+    background: radial-gradient(ellipse at center, rgba(255,193,106,1) 0%, rgba(255,225,92,1) 50%, rgba(255,193,106,1) 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.today-highlights .sun .arrow
+{
+    color: #ffffff;
+    font-size: 32px;
+}
+.today-highlights .sun-data
+{
+    display: inline-flex;
+    font-size: 24px;
+}
+
+.today-highlights .sun-data-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.today-highlights
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visibility
+{
+    font-size: 52px;
+    margin: 25px 10px 10px 10px; 
+}
+.visibility span
+{
+    font-size: 32px;
 }
 </style>
